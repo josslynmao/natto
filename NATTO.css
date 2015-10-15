@@ -10,8 +10,7 @@ body{
 }
 
 #banner{
-	height:150px;
-	padding:4px;
+	padding:10px 0px 10px 10px ;
 	text-align: left;
 	background-color: #A5F6FD;
 	margin-bottom: 5px;
@@ -24,12 +23,13 @@ body{
 	float: left;
 	background-color: white;
 	padding-right: 200px;
+	padding-left: 10px;
 	font-family: Helvetica;
 	font-size: 26px;
 }
 
 #links{
-	float:left;
+	float:right;
 	width:200px;
 	height:500px;
 	text-align: center;
