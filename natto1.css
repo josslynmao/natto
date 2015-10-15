@@ -1,0 +1,18 @@
+img{
+	position: absolute;
+	left:300px;
+	top:200px;
+}
+a{
+	font-family: Helvetica;
+	float:left;
+	color:#A2F6FE;
+	position:relative;
+	left:550px;
+	top:310px;
+	text-decoration: none;
+}
+
+a:hover{
+	color:#CECECE;
+}

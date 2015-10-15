@@ -1,0 +1,43 @@
+body{
+	
+	}
+
+/**{
+	border: 2px dashed blue;
+}*/
+
+h1{
+	background-color: #A2F6FE;
+	color:white;
+	font-size: 55px;
+	padding:20px 0px 20px 0px;
+}
+
+
+.imageright{
+	float:right;
+}
+
+.text{
+	width: 400px;
+	height:250px;
+	padding-top: 20px;
+	font-size: 20px;
+	font-family: Helvetica;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-indent: 50px;
+}
+
+.left{
+	float:left;
+	clear:right;
+}
+.right{
+	float:right;
+	clear:left;
+}
+
+.style{
+	display: inline;
+}
