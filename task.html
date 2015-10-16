@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Q1:Multi-Tenant</title>
+
+</head>
+<body>
+<h2>Q1:Multi-Tenant</h2>
+
+<h3>核心问题:</h3>
+
+<p><strong>（Big Boss 小陆）</strong></p>
+
+<ol>
+<li><p>资源分割;</p></li>
+<li><p>"租":不独占,可移出,没有绑定关系￼￼(需要扩展了解，例如:技术实现可以突破什么)。</p></li>
+</ol>
+
+
+<p>p.s.由川哥负责将老师这条的抽象含义找到具体的点，来指导小陆大老板调研学习。</p>
+
+<h3>调度算法</h3>
+
+<p><strong>（Big Boss 小陆）</strong></p>
+
+<ul>
+<li>采⽤用调度算法解决资源竞争协同问题。</li>
+</ul>
+
+
+<h3>隔离</h3>
+
+<p><strong>（Baby Fish 鱼仔）</strong></p>
+
+<ol>
+<li><p>命名空间资源隔离</p></li>
+<li><p>io资源隔离</p></li>
+<li><p>内存隔离——buffer overflow</p></li>
+<li><p>运⾏指令隔离</p></li>
+</ol>
+
+
+<hr />
+
+<h2>Q2:Migration</h2>
+
+<p><strong>（まおうさま 小真大魔王）</strong></p>
+
+<p>Tips:</p>
+
+<ul>
+<li><p>一旦解除绑定,传统的防⽕火墙和边界等会发⽣生怎样的变化;</p></li>
+<li><p>A机->B机都在网络边界,防⽕火墙应当如何设置;</p></li>
+<li><p>机器不断migration,路由等如何转化,⼤大量动态变化如何适应。</p></li>
+</ul>
+
+
+<hr />
+
+<h2>Q3:资源池化</h2>
+
+<p><strong>（A Father like the mountain and river 川爹 Just a little brother 毛哥）</strong></p>
+
+<ul>
+<li>￼￼￼￼￼￼IaaS的核⼼心——资源池化。</li>
+</ul>
+
+
+<hr />
+
+<h2>Q4:计算机网络小课堂</h2>
+
+<p><strong>（Captain Du 船长）</strong></p>
+
+<ol>
+<li><p>总结各种计算机网络协议;</p></li>
+<li><p>多线绑定问题;</p></li>
+<li><p>负载均衡(主流产品:F5负载均衡器;不仅应⽤用在第七层);</p></li>
+<li><p>内存映射。</p></li>
+</ol>
+
+
+<hr />
+
+<h2>Q5:其他问题收集</h2>
+
+<ol>
+<li><p>openstack是否⽀支持动态分配;</p></li>
+<li><p>openstack改变静态镜像的⽅方法,组建如何变换;</p></li>
+<li><p>网络隔离如何实现;<strong>（Handsome Boy 欢哥）</strong></p></li>
+<li><p>平台并发效率问题(有关负载均衡)。<strong>（Handsome Boy 欢哥）</strong>
+￼￼￼￼</p></li>
+</ol>
+
+
+<h6>p.s.问题1～4是周同学的,问题5是一排学霸同学的。</h6>
+
+<hr />
+
+<h3>组会安排</h3>
+
+<ul>
+<li><p>10.16.周五 19:00 四饭活动中心，第一次组会，主要进行整合，将所有内容串联起来，体现出知识框架和逻辑。每个人带ppt初稿，白底黑字。</p></li>
+<li><p>10.18.周日 19:00 四饭活动中心，第二次组会，ppt定稿。</p></li>
+</ul>
+
+</body>
+</html>
