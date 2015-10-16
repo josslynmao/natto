@@ -1,7 +1,8 @@
 body{
 	margin:0px;
 	font-size: 13px;
-	font-family: Helvetica;
+	font-family: 'proxima-nova';
+	letter-spacing: 1px;
 	}
 
 #container{
@@ -10,29 +11,39 @@ body{
 }
 
 #banner{
-	padding:10px 0px 10px 10px ;
-	text-align: left;
-	background-color: #A5F6FD;
-	margin-bottom: 5px;
-	font-family: Helvetica;
-	font-size: 55px;
-	color:white;
+	padding-left: 0px;
 }
 
 #content{
 	float: left;
-	background-color: white;
-	padding-right: 200px;
-	padding-left: 10px;
-	font-family: Helvetica;
-	font-size: 26px;
+	font-size: 20px;
+	margin-left: 50px;
+	margin-top: 20px;
 }
 
 #links{
-	float:right;
-	width:200px;
-	height:500px;
-	text-align: center;
-	background-color: #A5F6FD;
-	margin-left: -200px;
+}
+
+.fontstyle1{
+	color:#CECECE;
+	font-family: 'proxima-nova';
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin:30px 0px 5px 50px;
+}
+
+.fontstyle2{
+	color:#A5F6FD;
+	font-family: 'proxima-nova';
+	letter-spacing: 2px;
+	font-size: 70px;
+	margin:0px 0px 0px 50px;
+}
+
+.fontstyle3{
+	color:#CECECE;
+	font-family: 'proxima-nova';
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin:0px 0px 5px 50px;
 }
