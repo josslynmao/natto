@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>调研指导（20151016）</title>
+
+</head>
+<body>
+<h1>调研指导（20151016）</h1>
+
+<hr />
+
+<h3>Q1:Multi-Tenant</h3>
+
+<h6>多租户的核心</h6>
+
+<pre><code>a.资源共享 
+b.资源隔离
+</code></pre>
+
+<h6>资源共享</h6>
+
+<ul>
+<li>调度算法（和排队论是否有关）</li>
+</ul>
+
+
+<h6>租</h6>
+
+<ul>
+<li>一个情境：阿里云共享和独占</li>
+<li>技术</li>
+<li>畅想：个性化</li>
+</ul>
+
+
+<hr />
+
+<h3>Q2:隔离</h3>
+
+<ul>
+<li>数据隔离</li>
+<li>网络隔离</li>
+<li>命名空间隔离</li>
+<li>内存隔离</li>
+</ul>
+
+
+<hr />
+
+<h3>Q3:Migration</h3>
+
+<ul>
+<li>迁移关键技术</li>
+<li>网络资源管理：路由、交换机等</li>
+<li><p>具体问题：</p>
+
+<pre><code>Tips:
+
+1.一旦解除绑定,传统的防⽕火墙和边界等会发⽣生怎样的变化;
+
+2.A机-&gt;B机都在网络边界,防⽕火墙应当如何设置;
+
+3.机器不断migration,路由等如何转化,⼤大量动态变化如何适应。
+</code></pre></li>
+</ul>
+
+
+<hr />
+
+<h3>Q4:资源池化</h3>
+
+<ul>
+<li>为什么要引入资源池化</li>
+<li>资源池化技术（具体一个引擎）对比其他三种引擎</li>
+<li>展望</li>
+<li>有关于虚拟化以及存储技术等，详略问题</li>
+</ul>
+
+
+<hr />
+
+<h3>Q5:计算机网络小课堂</h3>
+
+<ul>
+<li>总结各种计算机网络协议;</li>
+<li>多线绑定问题;</li>
+<li>负载均衡(主流产品:F5负载均衡器;不仅应⽤用在第七层);</li>
+<li>内存映射。</li>
+</ul>
+
+
+<hr />
+
+<h3>Q6:其他问题</h3>
+
+<ul>
+<li>openstack是否⽀支持动态分配;</li>
+<li>openstack改变静态镜像的⽅方法,组建如何变换;</li>
+<li>平台并发效率问题(有关负载均衡)。</li>
+</ul>
+
+
+<hr />
+
+<p>下次会议：周日晚19:00，活动中心，带ppt等完整资料。</p>
+</body>
+</html>
