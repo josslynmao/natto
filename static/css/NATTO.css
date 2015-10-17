@@ -1,0 +1,50 @@
+body{
+	margin:0px;
+	font-size: 13px;
+	font-family: 'proxima-nova' Helvetica;
+	letter-spacing: 1px;
+	}
+
+#container{
+	position: relative;
+	width: 100%;
+}
+
+#banner{
+	padding-left: 0px;
+}
+
+#content{
+	float: left;
+	font-size: 15px;
+	margin-left: 50px;
+	margin-top: 40px;
+	line-height: 30px;
+}
+
+#links{
+}
+
+.fontstyle1{
+	color:#CECECE;
+	font-family:'proxima-nova' Helvetica ;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin:30px 0px 5px 50px;
+}
+
+.fontstyle2{
+	color:#A5F6FD;
+	font-family: 'proxima-nova' Helvetica;
+	letter-spacing: 2px;
+	font-size: 70px;
+	margin:0px 0px 0px 50px;
+}
+
+.fontstyle3{
+	color:#CECECE;
+	font-family: 'proxima-nova' Helvetica;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin:0px 0px 5px 50px;
+}
