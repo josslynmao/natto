@@ -97,9 +97,10 @@ body{
 .littleTitle{
 	text-decoration: none;
 	font-size: 23px;
-	color:#A5F6FD;
+
+	color:#DDDDDD;
 }
 
 a.littleTitle:hover{
-	color:#DDDDDD;
+	color:#A5F6FD;
 }
