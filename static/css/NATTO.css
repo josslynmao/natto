@@ -12,11 +12,13 @@ body{
 
 #banner{
 	padding-left: 0px;
+	margin-top: 50px;
 }
 
 #content{
 	padding:10px 10px 10px 10px;
 	margin-left: 30px;
+	margin-top: 30px;
 }
 
 #links{
@@ -57,8 +59,8 @@ body{
 
 .block{
 	text-align: center;
-	height:300px;
-	width:300px;
+	height:290px;
+	width:290px;
 	border:8px solid #A5F6FD;
 	border-radius: 15px;
 	background: white;
@@ -66,4 +68,15 @@ body{
 	margin:20px 20px;
 	float:left;
 	word-wrap:break-word;
+
+	transition:width 1s,height 1s;
+	-moz-transition:width 1s,height 1s;
+	-webkit-transition:width 1s,height 1s;
+	-o-transition:width 1s,height 1s;
+}
+
+div.block:hover{
+	height:300px;
+	width:300px;
+	border:8px solid #CECECE;
 }
