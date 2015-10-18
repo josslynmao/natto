@@ -82,13 +82,24 @@ body{
 .block2{
 	color: #A5F6FD;
 	font-size: 40px;
-	text-align: center;
+	text-align: left;
 	height:330px;
 	width:850px;
 	border:10px solid #A5F6FD;
 	border-radius: 20px;
 	background: white;
 	margin: 20px 20px;
+	padding-left: 20px;
 	float:left;
 	word-wrap:break-word;
+}
+
+.littleTitle{
+	text-decoration: none;
+	font-size: 23px;
+	color:#A5F6FD;
+}
+
+a.littleTitle:hover{
+	color:#DDDDDD;
 }
