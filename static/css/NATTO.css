@@ -67,12 +67,12 @@ body{
 
 .block{
 	color: #A5F6FD;
-	font-size: 30px;
+	font-size: 40px;
 	text-align: center;
 	height:330px;
 	width:330px;
-	border:8px solid #A5F6FD;
-	border-radius: 15px;
+	border:10px solid #A5F6FD;
+	border-radius: 20px;
 	background: white;
 	margin: 20px 20px;
 	float:left;
@@ -88,5 +88,5 @@ div.block:hover{
 	color:#DDDDDD;
 	height:340px;
 	width:340px;
-	border:8px solid #DDDDDD;
+	border:12px solid #DDDDDD;
 }
