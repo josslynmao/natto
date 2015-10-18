@@ -16,16 +16,24 @@ body{
 }
 
 #content{
-	padding:10px 10px 10px 10px;
-	margin-left: 30px;
-	margin-top: 30px;
+	background:url(../image/background.jpg);
+	height:400px;
+	padding:5px 40px;
+	margin: 0px;
 }
 
-#links{
+#footer{
+	background:#DDDDDD;
+	width:100%;
+	margin-top: 40px;
+	padding:15px;
+	color:white;
+	text-align: center;
+	float:left;
 }
 
 .fontstyle1{
-	color:#CECECE;
+	color:#DDDDDD;
 	font-family:'proxima-nova',Helvetica ;
 	font-size: 15px;
 	letter-spacing: 1px;
@@ -41,7 +49,7 @@ body{
 }
 
 .fontstyle3{
-	color:#CECECE;
+	color:#DDDDDD;
 	font-family: 'proxima-nova',Helvetica;
 	font-size: 15px;
 	letter-spacing: 1px;
@@ -58,14 +66,15 @@ body{
 }
 
 .block{
+	color: #A5F6FD;
+	font-size: 30px;
 	text-align: center;
-	height:290px;
-	width:290px;
+	height:330px;
+	width:330px;
 	border:8px solid #A5F6FD;
 	border-radius: 15px;
 	background: white;
-	padding:20px 20px;
-	margin:20px 20px;
+	margin: 20px 20px;
 	float:left;
 	word-wrap:break-word;
 
@@ -76,7 +85,8 @@ body{
 }
 
 div.block:hover{
-	height:300px;
-	width:300px;
-	border:8px solid #CECECE;
+	color:#DDDDDD;
+	height:340px;
+	width:340px;
+	border:8px solid #DDDDDD;
 }
