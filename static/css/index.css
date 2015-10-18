@@ -3,16 +3,41 @@ img{
 	left:300px;
 	top:200px;
 }
+
 a{
-	font-family: Helvetica;
-	float:left;
-	color:#A2F6FE;
-	position:relative;
-	left:550px;
-	top:310px;
 	text-decoration: none;
+	color:#A2F6FE;
 }
 
-a:hover{
-	color:#CECECE;
+
+
+.button{
+	font-family: Helvetica;
+	font-size: 18px;
+	text-align: center;
+	width:200px;
+	padding: 10px 10px;
+
+	float: left;
+	position:absolute;
+	left:550px;
+	top:300px;
+
+
+	transition:width 3s,height 3s;
+	-moz-transition:width 3s,height 3s,-moz-transform 3s; ;
+	-webkit-transition:width 3s,height 3s,-webkit-transform 3s;;
+	-o-transition:width 3s,height 3s,-o-transform 3s;;
+}
+
+div:hover{
+	font-size: 26px;
+	width:300px;
+	border: 2px solid #A2F6FE;
+	border-radius: 15px;
+
+	transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg); 
+	-o-transform:rotate(360deg); 
 }
