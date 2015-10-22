@@ -16,6 +16,7 @@ body{
 }
 
 #content{
+	display: flex;
 	background:url(../image/background.jpg);
 	height:400px;
 	padding:5px 40px;
