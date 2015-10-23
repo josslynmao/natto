@@ -1,7 +1,25 @@
+#container{
+	display:flex;
+	justify-content:center;
+}
+
+#content{
+	display: flex;
+	flex-direction:column;
+	align-item:center;
+	margin-top: 30px;
+}
+
+#footer{
+	display:flex;
+	padding:15px;
+	color:#dddddd;
+	text-align: center;
+}
+
 img{
-	position: absolute;
-	left:300px;
-	top:200px;
+	height:300px;
+	width:300px;
 }
 
 a{
@@ -9,20 +27,14 @@ a{
 	color:#A2F6FE;
 }
 
-
-
 .button{
 	font-family: Helvetica;
 	font-size: 18px;
 	text-align: center;
-	width:200px;
-	padding: 10px 10px;
-
-	float: left;
-	position:absolute;
-	left:550px;
-	top:300px;
-
+	margin:0px 70px 0px 70px;
+	padding: 10px 0px 10px 0px;
+	display: flex;
+	justify-content:center;
 
 	transition:width 3s,height 3s;
 	-moz-transition:width 3s,height 3s,-moz-transform 3s; ;
@@ -30,14 +42,8 @@ a{
 	-o-transition:width 3s,height 3s,-o-transform 3s;;
 }
 
-div:hover{
-	font-size: 26px;
-	width:300px;
-	border: 2px solid #A2F6FE;
+div.button:hover{
+	font-size: 18px;
+	border: 2px solid #dddddd;
 	border-radius: 15px;
-
-	transform:rotate(360deg);
-	-moz-transform:rotate(360deg);
-	-webkit-transform:rotate(360deg); 
-	-o-transform:rotate(360deg); 
 }
